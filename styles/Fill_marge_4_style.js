@@ -158,7 +158,7 @@ case '桑川村':
                     break;
 case '欠真間村':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(135,218,235,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(79,31,213,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -406,7 +406,7 @@ case '大畑村':
                     break;
 case '大和田村':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(123,182,211,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(79,31,213,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -486,7 +486,7 @@ case '長島村':
                     break;
 case '東一之江村':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(125,167,206,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(223,91,46,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
