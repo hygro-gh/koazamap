@@ -8,10 +8,10 @@ var style_kasairiai_1_3 = function(feature, resolution){
     };
     
     var labelText = ""; var value = feature.get("");
-    var labelFont = "18.2px \'Osaka\', sans-serif";
+    var labelFont = "18.0px \'Osaka\', sans-serif";
     var labelFill = "#e31a1c";
     var bufferColor = "#fafafa";
-    var bufferWidth = 1.0;
+    var bufferWidth = 2.0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
