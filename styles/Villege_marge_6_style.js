@@ -14,7 +14,7 @@ var style_Villege_marge_6 = function(feature, resolution){
     var bufferWidth = 2.0;
     var textAlign = "center";
     var offsetX = 0;
-    var offsetY = 0;
+    var offsetY = -10;
     var placement = 'point';
     if (feature.get("村名") !== null) {
         labelText = String(feature.get("村名"));
