@@ -465,13 +465,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したりしてます。';
+                linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したり。明治10年代頃の復元が目標。';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したりしてます。';
+            linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したり。明治10年代頃の復元が目標。';
         }
 
         titleElement.appendChild(linkElement);
