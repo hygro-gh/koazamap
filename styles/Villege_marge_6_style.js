@@ -8,7 +8,7 @@ var style_Villege_marge_6 = function(feature, resolution){
     };
     
     var labelText = ""; var value = feature.get("");
-    var labelFont = "24.0px \'Osaka\', sans-serif";
+    var labelFont = "18.0px \'Osaka\', sans-serif";
     var labelFill = "#003bfe";
     var bufferColor = "#fafafa";
     var bufferWidth = 2.0;
