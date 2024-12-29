@@ -182,7 +182,7 @@ case '佐野新田':
                     break;
 case '笹ヶ崎村':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(25,99,237,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(233,106,184,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -356,7 +356,7 @@ case '西船堀村':
                               bufferWidth)
     })];
                     break;
-case '青砥村':
+case '青戸村':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(234,165,82,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -446,7 +446,7 @@ case '中原村':
                     break;
 case '中小岩村':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(207,37,130,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(222,89,27,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -668,9 +668,57 @@ case '新宿町':
                               bufferWidth)
     })];
                     break;
-default:
+case '小菅村':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(14,88,193,0.2)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case '上千葉村':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(190,207,80,0.2)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'NULL':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(152,125,183,0.2)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case '下千葉村':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,158,23,0.2)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case '亀有村':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(232,113,141,0.2)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case '柳原村':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(141,90,153,0.2)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case '砂原村':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(25,99,237,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
