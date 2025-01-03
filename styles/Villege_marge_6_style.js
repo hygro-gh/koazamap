@@ -12,9 +12,9 @@ var style_Villege_marge_6 = function(feature, resolution){
     var labelFill = "#003bfe";
     var bufferColor = "#fafafa";
     var bufferWidth = 2.0;
-    var textAlign = "center";
+    var textAlign = "left";
     var offsetX = 0;
-    var offsetY = 0;
+    var offsetY = 20;
     var placement = 'point';
     if (feature.get("村名") !== null) {
         labelText = String(feature.get("村名"));
@@ -23,7 +23,7 @@ var style_Villege_marge_6 = function(feature, resolution){
         stroke: new ol.style.Stroke({color: 'rgba(0,59,254,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.9}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
-                              bufferWidth, textAlign)
+                              bufferWidth, offsetY)
     })];
 
     return style;
