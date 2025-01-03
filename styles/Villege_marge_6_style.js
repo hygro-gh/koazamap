@@ -22,8 +22,8 @@ var style_Villege_marge_6 = function(feature, resolution){
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(0,59,254,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.9}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor, textAlign,
-                              bufferWidth)
+                              labelFill, placement, bufferColor,
+                              bufferWidth, textAlign)
     })];
 
     return style;
