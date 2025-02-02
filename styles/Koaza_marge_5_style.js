@@ -8,14 +8,14 @@ var style_Koaza_marge_5 = function(feature, resolution){
     };
     
     var labelText = ""; var value = feature.get("");
-    var labelFont = "12.0px \'Osaka\', sans-serif";
+    var labelFont = "12px \'Osaka\', sans-serif";
     var labelFill = "#e41a1c";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
-    var placement = 'point';
+    var placement = 'line';
     if (feature.get("字名") !== null) {
         labelText = String(feature.get("字名"));
     }
