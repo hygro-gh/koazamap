@@ -13,9 +13,8 @@ var style_Koaza_marge_5 = function(feature, resolution){
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
-    var offsetX = 10;
-    var offsetY = 10;
-    var textBaseline: 'top'
+    var offsetX = 0;
+    var offsetY = 0;
     var placement = 'point';
     if (feature.get("字名") !== null) {
         labelText = String(feature.get("字名"));
