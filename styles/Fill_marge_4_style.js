@@ -758,7 +758,7 @@ case '興ノ宮村':
                     break;
 case '宮城村':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(69,220,15,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(227,178,122,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
