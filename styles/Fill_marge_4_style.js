@@ -836,7 +836,7 @@ case '嘉兵衛新田':
                               bufferWidth)
     })];
                     break;
-case '加賀皿沼村':
+case '加々皿沼村':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(225,91,29,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
