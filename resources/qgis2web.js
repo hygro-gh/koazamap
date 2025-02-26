@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+         maxZoom: 20, minZoom: 11
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([15565965.500442, 4257028.119799, 15575505.004428, 4263178.506242], map.getSize());
+map.getView().fit([15554571.484074, 4266461.774042, 15568913.347057, 4275663.958552], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -465,13 +465,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したり。明治10年代頃の復元が目標。';
+                linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したりしてます。';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したり。明治10年代頃の復元が目標。';
+            linkElement.innerHTML = '@hygro (on X/twitter)<br />23区内の小字地図をできたところから追加したり、たまに修正したりしてます。';
         }
 
         titleElement.appendChild(linkElement);
@@ -518,12 +518,14 @@ map.addControl(bottomAttribution);
 
 var attributionList = document.createElement('li');
 attributionList.innerHTML = `
-	<a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a> &middot;
 	<a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
 	<a href="https://openlayers.org/">OpenLayers</a> &middot;
 	<a href="https://qgis.org/">QGIS</a>	
 `;
-bottomAttribution.element.appendChild(attributionList);
+var bottomAttributionUl = bottomAttribution.element.querySelector('ul');
+if (bottomAttributionUl) {
+  bottomAttribution.element.insertBefore(attributionList, bottomAttributionUl);
+}
 
 
 // Disable "popup on hover" or "highlight on hover" if ol-control mouseover
