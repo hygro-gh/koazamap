@@ -7,7 +7,8 @@ var style_Koaza_marge_5 = function(feature, resolution){
         variables: {}
     };
     
-    var labelText = ""; var value = feature.get("");
+    var labelText = ""; 
+    var value = feature.get("");
     var labelFont = "14px \'Osaka\', sans-serif";
     var labelFill = "#e41a1c";
     var bufferColor = "";
@@ -20,7 +21,7 @@ var style_Koaza_marge_5 = function(feature, resolution){
         labelText = String(feature.get("字名"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.5}),
+        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.14}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
