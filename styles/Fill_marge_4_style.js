@@ -822,7 +822,7 @@ case '千住三丁目':
                     break;
 case '千住四丁目':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(54,252,140,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(230,5,181,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
