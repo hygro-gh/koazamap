@@ -798,7 +798,7 @@ case '石小田新田':
                     break;
 case '千住一丁目':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(2,40,255,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(130,245,8,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -806,7 +806,7 @@ case '千住一丁目':
                     break;
 case '千住五丁目':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(255,82,52,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(19,196,236,0.2)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
