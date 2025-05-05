@@ -19,9 +19,9 @@ var createTextStyle = function(feature, resolution, labelText, labelFont,
         font: labelFont,
         text: labelText,
         textBaseline: "middle",
-        textAlign: "left",
-        offsetX: 8,
-        offsetY: 3,
+        textAlign: "center",  // テキストをセンターに
+        offsetX: feature.get('offsetX') || 0, // オフセットは各レイヤーのfeature準拠
+        offsetY: feature.get('offsetY') || 0, // オフセットは各レイヤーのfeature準拠
         placement: placement,
         maxAngle: 0,
         fill: new ol.style.Fill({
