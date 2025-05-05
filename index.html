@@ -38,8 +38,16 @@
         html, body, #map {
             width: 100%;
             height: 100%;
-            padding: 0;
             margin: 0;
+            padding: 0;
+            overflow: hidden;              /* ← スクロールを防止 */
+            touch-action: none;           /* ← ズーム・スクロールなどのデフォルト挙動を無効化 */
+            overscroll-behavior: contain; /* ← スクロール突き抜け防止（特にiOS） */
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            touch-action: auto;           /* ← 地図上ではピンチズームなど許可 */
         }
         </style>
         <title>23区小字地図β</title>
