@@ -21,10 +21,25 @@ var style_Koaza_marge_5 = function(feature, resolution){
         labelText = String(feature.get("字名"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.14}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
+        stroke: new ol.style.Stroke({
+            color: 'rgba(228,26,28,1.0)', 
+            lineDash: null, 
+            lineCap: 'square', 
+            lineJoin: 'bevel', 
+            width: 1.2
+        }),
+        text: createTextStyle(
+            feature, 
+            resolution, 
+            labelText, 
+            labelFont, 
+            labelFill, 
+            placement, 
+            bufferColor, 
+            bufferWidth,
+            offsetX,    // レイヤーごとのオフセットXを渡す
+            offsetY     // レイヤーごとのオフセットYを渡す
+        )
     })];
 
     return style;
