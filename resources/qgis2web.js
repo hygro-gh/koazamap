@@ -2,19 +2,19 @@
 var extent = jsonSource_Koaza_marge_5.getExtent();
 var buffer = 15000;
 
-// バッファを加算
+// 上記バッファを加算
 extent[0] -= buffer;
 extent[1] -= buffer;
 extent[2] += buffer;
 extent[3] += buffer;
 
-// ビュー設定
+// 初期ビュー設定
 var view = new ol.View({
     center: ol.extent.getCenter(extent),
     zoom: 12,
     extent: extent,
     maxZoom: 20,
-    minZoom: 11
+    minZoom: 10
 });
 
 // マップ作成
