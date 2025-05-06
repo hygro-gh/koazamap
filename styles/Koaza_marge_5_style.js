@@ -20,13 +20,26 @@ var style_Koaza_marge_5 = function(feature, resolution){
     if (feature.get("字名") !== null) {
         labelText = String(feature.get("字名"));
     }
+    
+    // ズームレベル取得
+    var zoom = map.getView().getZoom();
+
+    // ズームに応じてフォントサイズを変える
+    var labelFont = "14px 'Osaka', sans-serif";
+    if (zoom < 15) {
+        labelFont = "10px 'Osaka', sans-serif";
+    }
+    if (zoom < 14) {
+        labelFont = "8px 'Osaka', sans-serif";
+    }
+    
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({
             color: 'rgba(228,26,28,1.0)', 
             lineDash: null, 
             lineCap: 'square', 
             lineJoin: 'bevel', 
-            width: 1.2
+            width: 1.5
         }),
         text: createTextStyle(
             feature, 
@@ -37,8 +50,6 @@ var style_Koaza_marge_5 = function(feature, resolution){
             placement, 
             bufferColor, 
             bufferWidth,
-            offsetX,    // レイヤーごとのオフセットXを渡す
-            offsetY     // レイヤーごとのオフセットYを渡す
         )
     })];
 
