@@ -9,7 +9,6 @@ var style_Koaza_marge_5 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "14px \'Osaka\', sans-serif";
     var labelFill = "#e41a1c";
     var bufferColor = "";
     var bufferWidth = 0;

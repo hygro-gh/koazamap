@@ -7,8 +7,8 @@ var style_kasairiai_2_2 = function(feature, resolution){
         variables: {}
     };
     
-    var labelText = ""; var value = feature.get("");
-    var labelFont = "11.700000000000001px \'Osaka\', sans-serif";
+    var labelText = ""; 
+    var value = feature.get("");
     var labelFill = "#003bfe";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -19,6 +19,19 @@ var style_kasairiai_2_2 = function(feature, resolution){
     if (feature.get("村名") !== null) {
         labelText = String(feature.get("村名"));
     }
+    
+    // ズームレベル取得
+    var zoom = map.getView().getZoom();
+
+    // ズームに応じてフォントサイズを変える
+    var labelFont = "11px 'Osaka', sans-serif";
+    if (zoom < 15) {
+        labelFont = "9px 'Osaka', sans-serif";
+    }
+    if (zoom < 14) {
+        labelFont = "8px 'Osaka', sans-serif";
+    }
+    
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(0,59,254,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.14}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
