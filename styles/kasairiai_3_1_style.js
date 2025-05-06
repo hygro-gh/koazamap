@@ -6,7 +6,7 @@ function categories_kasairiai_3_1(feature, value, size, resolution, labelText,
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case '東宇喜田':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(121,214,133,0.3)'}),
+        fill: new ol.style.Fill({color: 'rgba(121,214,133,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -14,7 +14,7 @@ function categories_kasairiai_3_1(feature, value, size, resolution, labelText,
                     break;
 case '長島':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(227,101,135,0.3)'}),
+        fill: new ol.style.Fill({color: 'rgba(227,101,135,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -22,7 +22,7 @@ case '長島':
                     break;
 case '堀江':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(169,64,230,0.3)'}),
+        fill: new ol.style.Fill({color: 'rgba(169,64,230,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -30,7 +30,7 @@ case '堀江':
                     break;
 case '二之江':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(115,178,216,0.3)'}),
+        fill: new ol.style.Fill({color: 'rgba(115,178,216,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -38,7 +38,7 @@ case '二之江':
                     break;
 case '桑川':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(62,142,196,0.3)'}),
+        fill: new ol.style.Fill({color: 'rgba(62,142,196,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -46,7 +46,7 @@ case '桑川':
                     break;
 case '下今井':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(22,99,170,0.2)'}),
+        fill: new ol.style.Fill({color: 'rgba(22,99,170,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -54,7 +54,7 @@ case '下今井':
                     break;
 default:
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(150,150,150,0.3)'}),
+        fill: new ol.style.Fill({color: 'rgba(150,150,150,0.4)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
