@@ -11,7 +11,7 @@ var style_kasairiai_1_3 = function(feature, resolution){
     var value = feature.get("");
     var labelFill = "#e31a1c";
     var bufferColor = "#fafafa";
-    var bufferWidth = 2.0;
+    var bufferWidth = 3.0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
@@ -24,12 +24,12 @@ var style_kasairiai_1_3 = function(feature, resolution){
     var zoom = map.getView().getZoom();
 
     // ズームに応じてフォントサイズを変える
-    var labelFont = "18px 'Osaka', sans-serif";
+    var labelFont = "bold 18px 'Osaka', sans-serif";
     if (zoom < 15) {
-        labelFont = "14px 'Osaka', sans-serif";
+        labelFont = "bold 14px 'Osaka', sans-serif";
     }
     if (zoom < 14) {
-        labelFont = "12px 'Osaka', sans-serif";
+        labelFont = "bold 12px 'Osaka', sans-serif";
     }
     
     var style = [ new ol.style.Style({
