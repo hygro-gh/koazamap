@@ -4,7 +4,7 @@ var wms_layers = [];
         var lyr__0 = new ol.layer.Tile({
             'title': '地理院淡色地図',
             'type':'base',
-            'opacity': 0.400000,
+            'opacity': 0.500000,
             
             
             source: new ol.source.XYZ({
